@@ -40,7 +40,7 @@
       </thead>
       <tbody ng-repeat="tea in teaList | filter:nameSearch | filter:categorySearch | orderBy:sort">
         <tr>
-          <td class="image-column"><img src="{{tea.imageUrl}}"></td>
+          <td class="image-column"><display-image img="tea.imageUrl"></display-image></td>
           <td class="info-column">
             <span class="tea-name">{{tea.name}}</span>
               <span class="float-right" ng-show="tea.inStock">

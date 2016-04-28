@@ -10,7 +10,8 @@
       'shoppingCart.filters',
       'shoppingCart.components.navbar',
       'shoppingCart.components.item',
-      'shoppingCart.components.checkout'
+      'shoppingCart.components.checkout',
+      'shoppingCart.components.image'
     ]);
 
 })();
