@@ -1,7 +1,9 @@
 (function() {
 
+  'use strict';
+
   angular
-    .module('shoppingCart')
+    .module('shoppingCart.components.checkout')
     .controller('cartController', cartController);
 
   cartController.$inject = ['$scope' , 'dataService'];

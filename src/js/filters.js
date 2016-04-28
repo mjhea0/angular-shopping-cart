@@ -1,6 +1,12 @@
 (function() {
 
-  angular.module('shoppingCart').filter('flatten', function() {
+  'use strict';
+
+  angular
+    .module('shoppingCart.filters', [])
+    .filter('flatten', flatten);
+
+  function flatten() {
     return function(arr) {
       return arr.reduce(function(a, b) {
         b.categories.forEach(function(el) {
@@ -11,6 +17,6 @@
         return a;
       }, []);
     };
-  });
+  }
 
 })();

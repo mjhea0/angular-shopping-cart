@@ -1,7 +1,9 @@
 (function() {
 
+  'use strict';
+
   angular
-    .module('shoppingCart')
+    .module('shoppingCart.services', [])
     .service('dataService', dataService);
 
   function dataService() {

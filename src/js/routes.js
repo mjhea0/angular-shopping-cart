@@ -1,18 +1,18 @@
 (function() {
 
+  'use strict';
+
   angular
-    .module('shoppingCart')
+    .module('shoppingCart.routes', [])
     .config(appConfig);
 
   function appConfig($routeProvider){
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/items.html',
-        controller: 'mainController'
+        template: '<item></item>'
       })
       .when('/checkout', {
-        templateUrl: 'partials/checkout.html',
-        controller: 'cartController'
+        template: '<checkout></checkout>',
       })
       .otherwise({
         redirectTo: '/'

@@ -1,12 +1,14 @@
 (function() {
 
+  'use strict';
+
   angular
-    .module('shoppingCart')
-    .controller('mainController', mainController);
+    .module('shoppingCart.components.item')
+    .controller('itemController', itemController);
 
-  mainController.$inject = ['$scope', 'dataService'];
+  itemController.$inject = ['$scope', 'dataService'];
 
-  function mainController($scope, dataService) {
+  function itemController($scope, dataService) {
 
     $scope.teaList = dataService.getTeas();
     $scope.checkoutQuantity = dataService.getCheckoutQuantity();
