@@ -1,1 +1,8 @@
-var app = angular.module('shoppingCart', ['ngRoute']);
+(function() {
+
+angular
+  .module('shoppingCart', [
+    'ngRoute'
+  ]);
+
+})();
