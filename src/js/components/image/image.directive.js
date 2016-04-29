@@ -10,7 +10,7 @@
       scope: {
         img: '='
       },
-      template: '<img ng-src="{{img}}">'
+      template: '<img class="checkout-image" ng-src="{{img}}">'
     };
   });
 

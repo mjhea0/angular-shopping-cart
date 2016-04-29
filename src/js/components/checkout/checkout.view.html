@@ -21,7 +21,7 @@
                 <li><strong>Caffeine scale:&nbsp;</strong>{{checkoutItem.caffeineScale}}</li>
                 <li><strong>Ingredients:&nbsp;</strong> {{checkoutItem.ingredients}}</li>
                 <li><strong>Rating:&nbsp;</strong> {{checkoutItem.rating}}</li>
-                <img class="checkout-image" src="{{checkoutItem.imageUrl}}"><br>
+                <display-image img="checkoutItem.imageUrl"></display-image><br>
                 <button class="btn btn-default btn-xs" ng-click="removeItem()">Remove Item</button>
               </ul>
 
